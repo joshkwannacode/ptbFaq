@@ -1,0 +1,78 @@
+.accordion-panel-main{
+    display:flex;
+    flex-direction:column;
+    margin-left: 30px;
+  }
+  
+.accordion-btn-main{
+	display:flex;
+    flex-direction:column;
+  }
+  
+.main-border-faq{
+     display:flex;
+    flex-direction:row;
+  }
+  
+.accordion-title{
+  font-weight:700;
+  color:#777;
+  width:300px;
+  margin-top:5px;
+  background-color: #2A8A9D !important; /* Green */
+  border: none !important;
+  color: white !important;
+  padding: 10px 22px;
+  font-size: 16px;
+}
+  
+.accordion-title:before{
+  margin-right:17px;
+}
+.accordion-title:hover{
+  cursor:pointer;
+  background-color: black !important;
+}
+ .accordion-title:focus {
+  outline:none !important;
+}
+.accordion-panel{
+  display:none;
+}
+
+#accordion-1{
+  background-color:black!important;
+}
+#accordion-1.active-a{
+  background-color:#2A8A9D !important;
+}
+#accordion-2.active-a{
+  background-color:black !important;
+}
+#accordion-3.active-a{
+  background-color:black !important;
+}
+#accordion-4.active-a{
+  background-color:black !important;
+}
+  
+#accordion1-panel.active-accordion{
+  display:none;
+}
+#accordion2-panel.active-accordion{
+  display:block;
+}
+#accordion3-panel.active-accordion{
+  display:block;
+}
+#accordion4-panel.active-accordion{
+  display:block;
+}
+
+@media screen and (max-width:500px) {
+    .accordion-btn-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
